@@ -6,6 +6,7 @@ function createBot() {
     port: 36726,
     username: 'AFKBot',
     auth: 'offline'
+ version: false
   });
 
   bot.on('spawn', () => {
