@@ -22,16 +22,18 @@ function createBot() {
     }, 30000);
   });
 
+  bot.on('error', (err) => {
+    console.log('ERROR:', err);
+  });
+
   bot.on('kicked', (reason) => {
-    console.log('Kick:', reason);
+    console.log('KICKED:', reason);
   });
 
   bot.on('end', () => {
-    console.log('Reconnect za 10s...');
+    console.log('DISCONNECTED');
     setTimeout(createBot, 10000);
   });
-
-  bot.on('error', console.log);
 }
 
 createBot();
