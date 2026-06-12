@@ -1,3 +1,5 @@
+console.log("NOVA VERZIA BOTA");
+
 const mineflayer = require('mineflayer');
 
 function createBot() {
