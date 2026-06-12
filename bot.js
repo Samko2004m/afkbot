@@ -10,16 +10,6 @@ function createBot() {
 
   bot.on('spawn', () => {
     console.log('Bot sa pripojil');
-
-    setInterval(() => {
-      bot.setControlState('jump', true);
-
-      setTimeout(() => {
-        bot.setControlState('jump', false);
-      }, 500);
-
-      bot.look(Math.random() * Math.PI * 2, 0, true);
-    }, 30000);
   });
 
   bot.on('error', (err) => {
@@ -32,7 +22,6 @@ function createBot() {
 
   bot.on('end', () => {
     console.log('DISCONNECTED');
-    setTimeout(createBot, 10000);
   });
 }
 
