@@ -3,7 +3,7 @@ const bot = mineflayer.createBot({
   port: 36726,
   username: 'AFKBot',
   auth: 'offline',
-  version: '1.21.8'
+  version: '26.1.2'
 });
 
   console.log("BOT VYTVORENY");
