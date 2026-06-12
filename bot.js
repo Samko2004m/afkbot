@@ -1,16 +1,10 @@
-const mineflayer = require('mineflayer');
-
-console.log("NOVA VERZIA BOTA");
-
-function createBot() {
-  console.log("VYTVARAM BOTA");
-
-  const bot = mineflayer.createBot({
-    host: 'normalnyserver123.aternos.me',
-    port: 36726,
-    username: 'AFKBot',
-    auth: 'offline'
-  });
+const bot = mineflayer.createBot({
+  host: 'normalnyserver123.aternos.me',
+  port: 36726,
+  username: 'AFKBot',
+  auth: 'offline',
+  version: '1.21.8'
+});
 
   console.log("BOT VYTVORENY");
 
